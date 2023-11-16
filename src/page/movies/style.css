@@ -1,0 +1,54 @@
+.page.movies {
+  border: solid 4px blue;
+  max-width: 1000px;
+  margin: auto;
+  /* container-type: inline-size; */
+
+  .layout {
+    border: solid 4px gold;
+  }
+
+  .kontainer {
+    border: solid 4px green;
+    /* container-type: inline-size; */
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .poster, .info {
+    border: solid 4px red;
+    min-height: 50px;
+  }
+
+  .poster img {
+    max-width: 100%;
+  }
+/* 
+  @container (width > 700px) {
+    .layout {
+      display: grid;
+      grid-template-columns: 5fr 2fr;
+      gap: 1rem;
+    }
+  }
+
+  @container (width > 450px) {
+    .card {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+
+  @container (width < 450px) {
+    .poster {
+      max-height: 200px;
+      overflow: hidden;
+    }
+
+    .description {
+      display: none;
+    }
+  } */
+}

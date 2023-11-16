@@ -1,0 +1,49 @@
+.page.nested-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container1 {
+    width: 60vw;
+    height: 40vw;
+    background-color: aqua;
+    display: flex;
+    container-type: inline-size;
+    /* writing-mode: vertical-rl; */
+  }
+
+  .container2 {
+    width: 50%;
+    height: 50%;
+    background-color: greenyellow;
+    container-type: inline-size;
+  }
+
+  .box1 {
+    width: 75px;
+    height: 75px;
+    background-color: maroon;
+  }
+
+  .box2 {
+    width: 75px;
+    height: 75px;
+    background-color: black;
+  }
+
+  @container (width < 300px) {
+    .box1 {
+      background-color: red;
+    }
+
+    .box2 {
+      background-color: red;
+    }
+
+    .layout {
+      background-color: black;
+    }
+  }
+}
