@@ -5,7 +5,7 @@ function App({ title }) {
 
   return (
     <div className="page movies @container">
-      <div className="layout @[700px]:grid @[700px]:grid-cols-[5fr_2fr] @[700px]:gap-4">
+      <div className="layout">
         <div className='kontainer @container'>
           {movieList.map((movie, index) => <MoviesCard key={index} movie={movie} />)}
         </div>
@@ -21,14 +21,14 @@ const MoviesCard = ({ movie }) => {
   const { imageUrl, title, subtitle, description } = movie;
 
   return (
-    <div className='card @[450px]:grid @[450px]:grid-cols-[1fr_3fr]'>
-      <div className='poster max-h-[200px] overflow-hidden @[450px]:max-h-none @[450px]:overflow-auto'>
+    <div className='card'>
+      <div className='poster'>
         <img src={imageUrl} alt={title} />
       </div>
       <div className='info'>
         <b className="title">{title}</b>
         <div className="subtitle">{subtitle}</div>
-        <div className="description hidden @[450px]:block">{description}</div>
+        <div className="description">{description}</div>
       </div>
     </div>
   )

@@ -2,7 +2,7 @@
   border: solid 4px blue;
   max-width: 1000px;
   margin: auto;
-  /* container-type: inline-size; */
+  container-type: inline-size;
 
   .layout {
     border: solid 4px gold;
@@ -10,7 +10,7 @@
 
   .kontainer {
     border: solid 4px green;
-    /* container-type: inline-size; */
+    container-type: inline-size;
   }
 
   .card {
@@ -25,7 +25,7 @@
   .poster img {
     max-width: 100%;
   }
-/* 
+
   @container (width > 700px) {
     .layout {
       display: grid;
@@ -50,5 +50,5 @@
     .description {
       display: none;
     }
-  } */
+  }
 }
